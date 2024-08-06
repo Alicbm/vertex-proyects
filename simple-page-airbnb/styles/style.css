@@ -1,0 +1,24 @@
+:root {
+  --background: #FFFFFF;
+  --background-footer: #F7F7F7;
+  --strong-text: #222222;
+  --gray: #6A6A6A;
+  --light-gray: #818181;
+  --pink: ##FF385C;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 1.6rem;
+  background-color: var(--background);
+}
+
+img {
+  width: 100%;
+}
