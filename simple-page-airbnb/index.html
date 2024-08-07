@@ -7,6 +7,8 @@
   <script src="https://kit.fontawesome.com/be66f8a81d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <title>Airbnb | Clone</title>
 </head>
 
@@ -15,41 +17,165 @@
   <!-- Encabezado -->
   <header>
 
-    <section class="header">
-      <div class="header-logo">
+    <!-- Header para dispositivos móviles -->
+    <section class="header-mobile">
+
+      <article class="header-mobile__filter">
+
+        <div class="header-mobile__input-search">
+          <span class="header-user__input-internet"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+
+        <div class="header-mobile__filter-items">
+          <p class="header-mobile__filter-items__title">¿A dónde quieres ir?</p>
+          <ul class="header-mobile__filter-items__list">
+            <li>En cualquier lugar del mundo</li>
+            <li>• Cualquier semana</li>
+            <li>• ¿Cuántos?</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="header-mobile__stays">
+        <!-- Iconicos -->
+        <div class="header-mobile__stays-item actived">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-ticket"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Icónicos</p>
+        </div>
+
+        <!-- Piscinas increibles -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-water-ladder"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Piscinas increibles</p>
+        </div>
+
+        <!-- Casas naturales -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-house-tsunami"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Casas naturales</p>
+        </div>
+
+        <!-- Visats increibles -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-images"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Vistas increibles</p>
+        </div>
+
+        <!-- Cúpulas -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-landmark-dome"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Cúpulas</p>
+        </div>
+
+        <!-- Cabañas -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-house-fire"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Cabañas</p>
+        </div>
+
+        <!-- Frente a la playa -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-umbrella-beach"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Frente a la playa</p>
+        </div>
+
+        <!-- Minicasas -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-house-circle-check"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Minicasas</p>
+        </div>
+
+        <!-- Casa del árbol -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-tree-city"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Casa del arbol</p>
+        </div>
+
+        <!-- Lago -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-water"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Lago</p>
+        </div>
+
+        <!-- Frente al lago -->
+        <div class="header-mobile__stays-item">
+          <span class="header-mobile__stays-item__icon">
+            <i class="fa-solid fa-house-flood-water"></i>
+          </span>
+          <p class="header-mobile__stays-item__text">Frente al lago</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Header para tablets y vistas más grandes -->
+    <section class="header-tablet">
+      <div class="header-tablet__logo">
         <img src="./images/logo-airbnb.png" alt="Logo de Airbnb">
       </div>
-  
-      <div class="header-estadias">
+
+      <div class="header-tablet__estadias">
         <p>Estadías</p>
         <p>Experiencias</p>
       </div>
-  
-      <div class="header-user">
-        <p class="header-user__airbnSpace">Pon tu espacio en Airbnb</p>
-  
-        <span class="header-user__internet"><i class="fa-solid fa-globe"></i></span>
-  
-        <div class="header-user__user">
-          <span class="header-user__user-menu"><i class="fa-solid fa-bars"></i></span>
-          <span class="header-user__user-user"><i class="fa-solid fa-user"></i></span>
+
+      <div class="header-tablet__user">
+        <p class="header-tablet__user-airbnSpace">Pon tu espacio en Airbnb</p>
+
+        <span class="header-tablet__user-internet"><i class="fa-solid fa-globe"></i></span>
+
+        <div class="header-tablet__user-user">
+          <span class="header-tablet__user-user__menu"><i class="fa-solid fa-bars"></i></span>
+          <span class="header-tablet__user-user__user"><i class="fa-solid fa-user"></i></span>
         </div>
       </div>
     </section>
 
-    <section class="header-mobile">
+    <!-- Navbar para tablets y dispositivos más grandes -->
+    <section class="header-navbar">
 
-      <div class="header-mobile__seach">
-        <span class="header-user__internet"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <div class="header-navbar__item">
+        <p class="header-navbar__item-title">Dónde</p>
+        <p class="header-navbar__item-text">Explora destinos</p>
       </div>
 
-      <div class="header-mobile__filter">
-        <h3 class="header-mobile__filter-title">¿A dónde quieres ir?</h3>
-        <ul class="header-mobile__filter-list">
-          <li>En cualquier lugar del mundo</li>
-          <li>Cualquier semana</li>
-          <li>¿Cuántos?</li>
-        </ul>
+      <div class="header-navbar__item">
+        <p class="header-navbar__item-title">Llegada</p>
+        <p class="header-navbar__item-text">Agrega fechas</p>
+      </div>
+
+      <div class="header-navbar__item">
+        <p class="header-navbar__item-title">Salida</p>
+        <p class="header-navbar__item-text">Agrega personas</p>
+      </div>
+
+      <div class="header-navbar__item">
+        <p class="header-navbar__item-title">Quién</p>
+        <p class="header-navbar__item-text">Cuántos</p>
+      </div>
+
+      <div>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
 
     </section>
@@ -59,134 +185,44 @@
   <!-- Cuerpo de la página -->
   <main class="main">
 
-    <!-- Seccióm del NavBar -->
-    <section class="main-navbar">
-
-      <div class="main-navbar__item">
-        <p class="main-navbar__item-title">Dónde</p>
-        <p class="main-navbar__item-text">Explora destinos</p>
-      </div>
-
-      <div class="main-navbar__item">
-        <p class="main-navbar__item-title">Llegada</p>
-        <p class="main-navbar__item-text">Agrega fechas</p>
-      </div>
-
-      <div class="main-navbar__item">
-        <p class="main-navbar__item-title">Salida</p>
-        <p class="main-navbar__item-text">Agrega personas</p>
-      </div>
-
-      <div class="main-navbar__item">
-        <p class="main-navbar__item-title">Quién</p>
-        <p class="main-navbar__item-text">Cuántos</p>
-      </div>
-
-      <div>
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-
-    </section>
-
-    <!-- Sección para seleccionar el tipo del airbnb -->
-    <section class="main-selectAirbn">
-
-      <!-- Iconicos -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-ticket"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Icónicos</p>
-      </div>
-
-      <!-- Piscinas increibles -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-water-ladder"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Piscinas increibles</p>
-      </div>
-
-      <!-- Casas naturales -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-house-tsunami"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Casas naturales</p>
-      </div>
-
-      <!-- Visats increibles -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-images"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Vistas increibles</p>
-      </div>
-
-      <!-- Cúpulas -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-landmark-dome"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Cúpulas</p>
-      </div>
-
-      <!-- Cabañas -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-house-fire"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Cabañas</p>
-      </div>
-
-      <!-- Frente a la playa -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-umbrella-beach"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Frente a la playa</p>
-      </div>
-
-      <!-- Minicasas -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-house-circle-check"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Minicasas</p>
-      </div>
-
-      <!-- Casa del árbol -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-tree-city"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Casa del arbol</p>
-      </div>
-
-      <!-- Lago -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-water"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Lago</p>
-      </div>
-
-      <!-- Frente al lago -->
-      <div class="main-selectAirbn__item">
-        <span class="main-selectAirbn__item-icon">
-          <i class="fa-solid fa-house-flood-water"></i>
-        </span>
-        <p class="main-selectAirbn__item-text">Frente al lago</p>
-      </div>
-
-    </section>
-
     <!-- Sección de las esatdias en tendencia -->
     <section class="main-trendingElements">
 
       <!-- Estadia -->
       <div class="main-trendingElements__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-trendingElements__element">
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/mansion-x-img.webp" alt="Entrena en la Mansión X"
+          class="main-trendingElements__element-image">
+        <h2 class="main-trendingElements__element-title">Entrena en la Mansión X</h2>
+        <p class="main-trendingElements__element-host">Anfitrión: Jubilee</p>
+        <p class="main-trendingElements__element-date"><strong>$157,818 COP</strong> por huésped</p>
+      </div>
+
+      <!-- Estadia -->
+      <div class="main-trendingElements__element">
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/polly-pocket-2-img.webp" alt="Pijamada en la casa compactada de Polly Pocket"
+          class="main-trendingElements__element-image">
+        <h2 class="main-trendingElements__element-title">Pijamada en la casa compactada de Polly Pocket</h2>
+        <p class="main-trendingElements__element-host">Anfitrión: Polly Pocket</p>
+        <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
+      </div>
+
+      <!-- Estadia -->
+      <div class="main-trendingElements__element">
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/polly-pocket-img.webp" alt="Juega en la casa compactada de Polly Pocket"
+          class="main-trendingElements__element-image">
+        <h2 class="main-trendingElements__element-title">Juega en la casa compactada de Polly Pocket</h2>
+        <p class="main-trendingElements__element-host">Anfitrión: Kevin Hart</p>
+        <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
+      </div>
+
+      <!-- Estadia -->
+      <div class="main-trendingElements__element">
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images//kevin-hart.webp" alt="Noche VIP con Kevin Hart"
+          class="main-trendingElements__element-image">
         <h2 class="main-trendingElements__element-title">Noche VIP con Kevin Hart</h2>
         <p class="main-trendingElements__element-host">Anfitrión: Kevin Hart</p>
         <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
@@ -194,119 +230,186 @@
 
       <!-- Estadia -->
       <div class="main-trendingElements__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-trendingElements__element">
-        <h2 class="main-trendingElements__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-trendingElements__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/doja-cat-img.webp" alt="Una sesión exclusiva con Doja"
+          class="main-trendingElements__element-image">
+        <h2 class="main-trendingElements__element-title">Una sesión exclusiva con Doja</h2>
+        <p class="main-trendingElements__element-host">Anfitrión: Doja Cat</p>
+        <p class="main-trendingElements__element-date">Abre en octubre</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-trendingElements__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-trendingElements__element">
-        <h2 class="main-trendingElements__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-trendingElements__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/purple-rain-img.webp" alt="Quédate en la casa de Purple Rain Prince"
+          class="main-trendingElements__element-image">
+        <h2 class="main-trendingElements__element-title">Quédate en la casa de Purple Rain Prince</h2>
+        <p class="main-trendingElements__element-host">Anfitrión: Wendy y Lisa</p>
+        <p class="main-trendingElements__element-date">Abre en octubre</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-trendingElements__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-trendingElements__element">
-        <h2 class="main-trendingElements__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-trendingElements__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-trendingElements__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-trendingElements__element">
-        <h2 class="main-trendingElements__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-trendingElements__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-trendingElements__element-date">Abre el 21 de agosto</p>
+        <span class="main-trendingElements__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/jahvi-img.webp" alt="Ponte en los zapatos de Janhvi Kapoor"
+          class="main-trendingElements__element-image">
+        <h2 class="main-trendingElements__element-title">Ponte en los zapatos de Janhvi Kapoor</h2>
+        <p class="main-trendingElements__element-host">Anfitrión: Janhvi Kapoor</p>
+        <p class="main-trendingElements__element-date">Agotada</p>
       </div>
 
     </section>
 
+    <h2 class="main-title">Estadías anteriores</h2>
+    
     <!-- Sección de las esatdias en tendencia -->
     <section class="main-previousStays">
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/museo-orsay.webp" alt="Inaugura los Juegos Olimpicos en el Museo de Orsay"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Inaugura los Juegos Olimpicos en el Museo de Orsay</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Mathieu Lehanneur</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/museo-orsay-2-img.webp" alt="Despierta en el Museo de Orsay"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Despierta en el Museo de Orsay</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Mathieu Lehanneur</p>
+        <p class="main-previousStays__element-date">Agotada
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/intensamente-img.webp" alt="Crea pensamientos centrales con Intensa-Mente 2"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Crea pensamientos centrales con Intensa-Mente 2</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Joy</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/los-increibles-img.jpeg" alt="Diseña tu supertraje de Los Increíbles"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Diseña tu supertraje de Los Increíbles</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Edna Mode</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/feid-img.webp" alt="Vete de gira con Feid" class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Vete de gira con Feid</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Feid</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/khabib-img.webp" alt="Juega con Khaby Lame" class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Juega con Khaby Lame</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Khaby Lame</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/mansion-x-2.webp" alt="Quédate en la Mansión X" class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Quédate en la Mansión X</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Jubilee</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/ferrari-img.jfif" alt="Pasa la noche en el Museo Ferrari"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Pasa la noche en el Museo Ferrari</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Marc Gené</p>
+        <p class="main-previousStays__element-date">Agotada</p>
+      </div>
+
+
+      <!-- Estadia -->
+      <div class="main-previousStays__element">
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/up-img.webp" alt="Aventura de altura en la casa de Up"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Aventura de altura en la casa de Up</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Carl Fredricksen</p>
+        <p class="main-previousStays__element-date">Agotada</p>
+      </div>
+
+
+      <!-- Estadia -->
+      <div class="main-previousStays__element">
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/shrek-img.webp" alt="El pantano de Shrek" class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">El pantano de Shrek</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Donkey</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/barbie-img.webp" alt="Casa de los Sueños en Barbie Malibú, al estilo Ken"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Casa de los Sueños en Barbie Malibú, al estilo Ken</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Ken</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
       <!-- Estadia -->
       <div class="main-previousStays__element">
-        <img src="./images//kevin-hart.webp" alt="" class="main-previousStays__element">
-        <h2 class="main-previousStays__element-title">Noche VIP con Kevin Hart</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Kevin Hart</p>
-        <p class="main-previousStays__element-date">Abre el 21 de agosto</p>
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/lasso-img.webp" alt="El pub favorito de Ted Lasso" class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">El pub favorito de Ted Lasso</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Mae</p>
+        <p class="main-previousStays__element-date">Agotada</p>
+      </div>
+
+      <!-- Estadia -->
+      <div class="main-previousStays__element">
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/houseplant-img.webp" alt="Unretiro al estilo Houseplant"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">Unretiro al estilo Houseplant</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Seth Rogen</p>
+        <p class="main-previousStays__element-date">Agotada</p>
+      </div>
+
+      <!-- Estadia -->
+      <div class="main-previousStays__element">
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/pobre-angelito-img.jpeg" alt="De vacaciones con Mi pobre angelito"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">De vacaciones con Mi pobre angelito</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Buzz</p>
+        <p class="main-previousStays__element-date">Agotada</p>
+      </div>
+
+      <!-- Estadia -->
+      <div class="main-previousStays__element">
+        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <img src="./images/blockbuster-img.webp" alt="La última tienda de Blockbuster"
+          class="main-previousStays__element-image">
+        <h2 class="main-previousStays__element-title">La última tienda de Blockbuster</h2>
+        <p class="main-previousStays__element-host">Anfitrión: Sandi</p>
+        <p class="main-previousStays__element-date">Agotada</p>
       </div>
 
     </section>
@@ -321,7 +424,7 @@
       <h2 class="footer-inspiration__title">Inspiración para escapadas futuras</h2>
 
       <ul class="footer-inspiration__list">
-        <li>Popular</li>
+        <li class="activated">Popular</li>
         <li>Arte y cultura</li>
         <li>Al aire libre</li>
         <li>Montañas</li>
@@ -334,10 +437,45 @@
 
         <div class="footer-inspiration__eachElement-element">
           <p>Canmore</p>
-          <p>Tucson</p>
+          <p>Apartamentos vacacionales</p>
         </div>
 
         <div class="footer-inspiration__eachElement-element">
+          <p>Benalmádena</p>
+          <p>Apartamentos vacacionales</p>
+        </div>
+
+        <div class="footer-inspiration__eachElement-element">
+          <p>Marbella</p>
+          <p>Casas vacacionales</p>
+        </div>
+
+        <div class="footer-inspiration__eachElement-element">
+          <p>Mijas</p>
+          <p>Alquileres vacacionales</p>
+        </div>
+
+        <div class="footer-inspiration__eachElement-element">
+          <p>Prescott</p>
+          <p>Alojamientos vacacionales que admiten mascotas</p>
+        </div>
+
+        <div class="footer-inspiration__eachElement-element">
+          <p>Scottsdale</p>
+          <p>Alquileres vacacionales</p>
+        </div>
+
+        <div class="footer-inspiration__eachElement-element">
+          <p>Tucson</p>
+          <p>Mansiones vacacionales</p>
+        </div>
+
+        <div class="footer-inspiration__eachElement-seemore">
+          <p>Mostrar más</p>
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+
+        <!-- <div class="footer-inspiration__eachElement-element">
           <p>Canmore</p>
           <p>Tucson</p>
         </div>
@@ -395,42 +533,17 @@
         <div class="footer-inspiration__eachElement-element">
           <p>Canmore</p>
           <p>Tucson</p>
-        </div>
-
-        <div class="footer-inspiration__eachElement-element">
-          <p>Canmore</p>
-          <p>Tucson</p>
-        </div>
-
-        <div class="footer-inspiration__eachElement-element">
-          <p>Canmore</p>
-          <p>Tucson</p>
-        </div>
-
-        <div class="footer-inspiration__eachElement-element">
-          <p>Canmore</p>
-          <p>Tucson</p>
-        </div>
-
-        <div class="footer-inspiration__eachElement-element">
-          <p>Canmore</p>
-          <p>Tucson</p>
-        </div>
-
-        <div class="footer-inspiration__eachElement-element">
-          <p>Canmore</p>
-          <p>Tucson</p>
-        </div>
+        </div> -->
 
       </div>
 
     </section>
 
     <section class="footer-information">
-      
+
       <!-- Sección de asistencia -->
       <ul class="footer-information__asistencia">
-        <h3>Asistencia</h3>
+        <p>Asistencia</p>
         <li>Centro de ayuda</li>
         <li>AirCover</li>
         <li>Antidiscriminación</li>
@@ -441,7 +554,7 @@
 
       <!-- Sección modo anfitrión -->
       <ul class="footer-information__modoAnfitrion">
-        <h3>Modo anfitrión</h3>
+        <p>Modo anfitrión</p>
         <li>Pon tu espacio en Airbnb</li>
         <li>AirCover para anfitriones</li>
         <li>Recursos para anfitrionar</li>
@@ -452,26 +565,17 @@
 
       <!-- Sección de Airbnb -->
       <ul class="footer-information__airbnb">
-        <h3>Airbnb</h3>
+        <p>Airbnb</p>
         <li>Sala de prensa</li>
         <li>Funciones nuevas</li>
         <li>Carreras</li>
         <li>Inversionistas</li>
         <li>Espacios de Airbnb.org</li>
       </ul>
-      
+
     </section>
 
     <section class="footer-footer">
-      
-      <!-- Sección de términos y privacidad -->
-      <ul class="footer-footer__list">
-        <li>2024 Airbnb, Inc</li>
-        <li>Privacidad</li>
-        <li>Términos</li>
-        <li>Mapa del sitio</li>
-        <li>Datos de la empresa</li>
-      </ul>
 
       <!-- Sección de redes sociales -->
       <div class="footer-footer__socialMedias">
@@ -493,6 +597,18 @@
         </div>
 
       </div>
+
+      <div class="footer-footer__airbnb">
+        <p>2024 Airbnb, Inc</p>
+      </div>
+
+      <!-- Sección de términos y privacidad -->
+      <ul class="footer-footer__list">
+        <li>Privacidad</li>
+        <li>• Términos</li>
+        <li>• Mapa del sitio</li>
+        <li>• Datos de la empresa</li>
+      </ul>
 
     </section>
 

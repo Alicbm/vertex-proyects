@@ -1,0 +1,116 @@
+header {
+  padding-top: 160px;
+}
+
+.header-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background);
+  padding: 15px;
+  padding-bottom: 0;
+  z-index: 10;
+
+  /* Para la sombra */
+  -webkit-box-shadow: 0px -6px 14px 9px rgba(143,143,143,0.17);
+  -moz-box-shadow: 0px -6px 14px 9px rgba(143,143,143,0.17);
+  box-shadow: 0px -6px 14px 9px rgba(143,143,143,0.17);
+}
+
+.header-mobile__filter {
+  width: 95%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  /* Para la sombra */
+  -webkit-box-shadow: 0 3px 10px rgba(0 0 0 / 0.1);
+  -moz-box-shadow: 0 3px 10px rgba(0 0 0 / 0.1);
+  box-shadow: 0 3px 10px rgba(0 0 0 / 0.1);
+  border: 0.5px solid rgba(0 0 0 / 0.08);
+}
+
+.header-mobile__input-search {
+  font-size: 2rem;
+}
+
+.header-mobile__filter-items {
+  width: 100%;
+}
+
+.header-mobile__filter-items__title {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  color: var(--strong-tex);
+  margin-bottom: 2px;
+}
+
+.header-mobile__filter-items__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.header-mobile__filter-items__list li:first-child {
+  width: 45%;
+  max-width: 180px;
+}
+
+.header-mobile__filter-items__list li {
+  width: 30%;
+  max-width: 80px;
+  max-height: 17px;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.header-mobile__stays {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.header-mobile__stays::-webkit-scrollbar {
+  display: none;
+}
+
+.header-mobile__stays-item {
+  display: grid;
+  place-items: center;
+  min-width: fit-content;
+  color: var(--light-gray);
+  padding-bottom: 15px;
+}
+
+.header-mobile__stays-item.actived {
+  color: var(--strong-text);
+  border-bottom: 2px solid var(--strong-text);
+}
+
+.header-mobile__stays-item__icon {
+  font-size: 2rem;
+}
+
+.header-mobile__stays-item__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header-tablet, 
+.header-navbar {
+  display: none;
+}
+
+
+
