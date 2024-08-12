@@ -78,3 +78,9 @@ aplicamos el mismo diseño a esas clases */
   font-weight: 600;
   margin-bottom: 20px;
 }
+
+@media(min-width: 740px) {
+  .main {
+    padding-top: 340px;
+  }
+}
