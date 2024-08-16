@@ -1,0 +1,144 @@
+.footer {
+    background-color: var(--background-footer);
+  }
+  
+  .footer-inspiration {
+    padding: 48px 24px;
+    border-bottom: 1px solid #d1d1d1;
+  }
+  
+  .footer-inspiration__title {
+    font-size: 2.4rem;
+    color: var(--strong-text);
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .footer-inspiration__list {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-size: 1.5rem;
+    overflow-x: scroll;
+    border-bottom: 1px solid #d1d1d1;
+  }
+  
+  .footer-inspiration__list li {
+    min-width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+  .footer-inspiration__list li.activated {
+    color: var(--strong-text);
+    border-bottom: 2px solid var(--strong-text);
+  }
+  
+  .footer-inspiration__list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .footer-inspiration__eachElement {
+    display: grid;
+    place-items: start;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding-top: 32px;
+  }
+  
+  .footer-inspiration__eachElement-element {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Con :first-child accedemos al primer hijo "p" de la clase footer-inspiration__eachElement-element */
+  .footer-inspiration__eachElement-element p:first-child {
+    color: var(--strong-text);
+    line-height: 2.5rem;
+    }
+    
+    /* Con :last-child accedemos al último hijo "p" de la clase footer-inspiration__eachElement-element */
+    .footer-inspiration__eachElement-element p:last-child {
+      color: var(--light-gray);
+      line-height: 2.5rem;
+  }
+  
+  .footer-inspiration__eachElement-seemore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: var(--strong-text);
+    font-weight: 600;
+  }
+  
+  .footer-information {
+    padding: 0 24px;
+  }
+  
+  .footer-information__asistencia,
+  .footer-information__modoAnfitrion,
+  .footer-information__airbnb {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: var(--strong-text);
+    list-style: none;
+    padding: 24px 0;
+    border-bottom: 1px solid #d1d1d1;
+  }
+  
+  .footer-information__asistencia p,
+  .footer-information__modoAnfitrion p,
+  .footer-information__airbnb p {
+    font-weight: 600;
+  }
+  
+  .footer-footer {
+    padding: 24px;
+  }
+  
+  .footer-footer__socialMedias {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-footer__socialMedias-idiom,
+  .footer-footer__socialMedias-momey {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--strong-text);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-footer__socialMedias-socialMedias {
+    display: none;
+  }
+  
+  .footer-footer__airbnb {
+    margin-bottom: 15px;
+  }
+  
+  .footer-footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  
+  
+  
+  
+  
+  
