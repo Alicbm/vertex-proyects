@@ -4,24 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/be66f8a81d.js" crossorigin="anonymous"></script>
   <title>Airbnb | Clone</title>
 </head>
 
 <body>
 
-  <header>
+  <header class="header">
 
-    <section>
+    <section class="header-mobile">
 
       <!-- Header para mobiles -->
-      <article>
-        <div>
+      <article class="header-mobile__navbar">
+        <div class="header-mobile__navbar-button">
           <span><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
 
-        <div>
-          <p>¿A dónde quieres ir?</p>
-          <ul>
+        <div class="header-mobile__navbar-navbar">
+          <p class="header-mobile__navbar-navbar__title">¿A dónde quieres ir?</p>
+          <ul class="header-mobile__navbar-navbar__list">
             <li>En cualquier lugar del mundo</li>
             <li>• Cualquier semana</li>
             <li>• ¿Cuántos?</li>
@@ -31,20 +32,20 @@
       <!-- Fin del Header para mobiles -->
 
       <!-- Inicio del Header para tablets y computadores -->
-      <article>
+      <article class="header-tablet">
 
-        <div>
-          <div>
+        <div class="header-tablet__head">
+          <div class="header-tablet__head-logo">
             <img src="./images/logo_tablet.png" alt="Logo de Airbnb">
           </div>
 
-          <div>
-            <div>
+          <div class="header-tablet__head-navbar">
+            <div class="header-tablet__head-navbar__stay">
               <p>Estadías</p>
               <p>Experiencias</p>
             </div>
 
-            <div>
+            <div class="header-tablet__head-navbar__list">
               <p>En cualquier lugar del mundo</p>
               <p>Cualquier semana</p>
               <p>¿Cuántos?</p>
@@ -52,11 +53,11 @@
             </div>
           </div>
 
-          <div>
-            <p>Pon tu espacio en Airbnb</p>
-            <span><i class="fa-solid fa-globe"></i></span>
+          <div class="header-tablet__head-user">
+            <p class="header-tablet__head-user__airbnb">Pon tu espacio en Airbnb</p>
+            <span class="header-tablet__head-user__internet"><i class="fa-solid fa-globe"></i></span>
 
-            <div>
+            <div class="header-tablet__head-user__user">
               <span><i class="fa-solid fa-bars"></i></span>
               <span><i class="fa-solid fa-user"></i></span>
             </div>
@@ -64,37 +65,37 @@
 
         </div>
 
-        <div>
+        <div class="header-tablet__stays">
           <p>Estadías</p>
           <p>Experiencias</p>
         </div>
 
-        <div>
+        <div class="header-tablet__filter">
           <!-- Explora destinos -->
-          <div>
+          <div class="header-tablet__filter-item">
             <p>Dónde</p>
             <p>Explora destinos</p>
           </div>
 
           <!-- LLegada -->
-          <div>
+          <div class="header-tablet__filter-item">
             <p>LLegada</p>
             <p>Agrega fecha</p>
           </div>
 
           <!-- Salida -->
-          <div>
+          <div class="header-tablet__filter-item">
             <p>Salida</p>
             <p>Agrega fecha</p>
           </div>
 
           <!-- Quién -->
-          <div>
+          <div class="header-tablet__filter-item">
             <p>Quién</p>
             <p>¿Cuántos?</p>
           </div>
 
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="header-tablet__filter-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
       </article>
@@ -103,100 +104,100 @@
     </section>
 
     <!-- Inicio de a seccion de estadias -->
-    <section class="header-tablet__stays">
+    <section class="header-stays">
       <!-- Iconicos -->
-      <div class="header-tablet__stays-item actived">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item actived">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-ticket"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Icónicos</p>
+        <p class="header-stays__item-text">Icónicos</p>
       </div>
 
       <!-- Piscinas increibles -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-water-ladder"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Piscinas increibles</p>
+        <p class="header-stays__item-text">Piscinas increibles</p>
       </div>
 
       <!-- Casas naturales -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-house-tsunami"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Casas naturales</p>
+        <p class="header-stays__item-text">Casas naturales</p>
       </div>
 
       <!-- Visats increibles -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-images"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Vistas increibles</p>
+        <p class="header-stays__item-text">Vistas increibles</p>
       </div>
 
       <!-- Cúpulas -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-landmark-dome"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Cúpulas</p>
+        <p class="header-stays__item-text">Cúpulas</p>
       </div>
 
       <!-- Cabañas -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-house-fire"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Cabañas</p>
+        <p class="header-stays__item-text">Cabañas</p>
       </div>
 
       <!-- Frente a la playa -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-umbrella-beach"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Frente a la playa</p>
+        <p class="header-stays__item-text">Frente a la playa</p>
       </div>
 
       <!-- Minicasas -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-house-circle-check"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Minicasas</p>
+        <p class="header-stays__item-text">Minicasas</p>
       </div>
 
       <!-- Casa del árbol -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-tree-city"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Casa del arbol</p>
+        <p class="header-stays__item-text">Casa del arbol</p>
       </div>
 
       <!-- Lago -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-water"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Lago</p>
+        <p class="header-stays__item-text">Lago</p>
       </div>
 
       <!-- Frente al lago -->
-      <div class="header-tablet__stays-item">
-        <span class="header-tablet__stays-item__icon">
+      <div class="header-stays__item">
+        <span class="header-stays__item-icon">
           <i class="fa-solid fa-house-flood-water"></i>
         </span>
-        <p class="header-tablet__stays-item__text">Frente al lago</p>
+        <p class="header-stays__item-text">Frente al lago</p>
       </div>
     </section>
     <!-- Fin de a seccion de estadias -->
 
   </header>
 
-  <main>
+  <main class="main">
 
     <!-- Incio de sección de las estadias en tendencia -->
     <section class="main-trendingElements">
@@ -277,152 +278,161 @@
     <!-- Inicio de sección de las estadias anteriores -->
     <section class="main-previousStays">
 
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/museo-orsay.webp" alt="Inaugura los Juegos Olimpicos en el Museo de Orsay"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Inaugura los Juegos Olimpicos en el Museo de Orsay</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Mathieu Lehanneur</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/museo-orsay-2-img.webp" alt="Despierta en el Museo de Orsay"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Despierta en el Museo de Orsay</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Mathieu Lehanneur</p>
-        <p class="main-previousStays__element-date">Agotada
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/intensamente-img.webp" alt="Crea pensamientos centrales con Intensa-Mente 2"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Crea pensamientos centrales con Intensa-Mente 2</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Joy</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/los-increibles-img.jpeg" alt="Diseña tu supertraje de Los Increíbles"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Diseña tu supertraje de Los Increíbles</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Edna Mode</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/feid-img.webp" alt="Vete de gira con Feid" class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Vete de gira con Feid</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Feid</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/khabib-img.webp" alt="Juega con Khaby Lame" class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Juega con Khaby Lame</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Khaby Lame</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/mansion-x-2.webp" alt="Quédate en la Mansión X" class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Quédate en la Mansión X</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Jubilee</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/ferrari-img.jfif" alt="Pasa la noche en el Museo Ferrari"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Pasa la noche en el Museo Ferrari</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Marc Gené</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/up-img.webp" alt="Aventura de altura en la casa de Up"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Aventura de altura en la casa de Up</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Carl Fredricksen</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/shrek-img.webp" alt="El pantano de Shrek" class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">El pantano de Shrek</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Donkey</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/barbie-img.webp" alt="Casa de los Sueños en Barbie Malibú, al estilo Ken"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Casa de los Sueños en Barbie Malibú, al estilo Ken</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Ken</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/lasso-img.webp" alt="El pub favorito de Ted Lasso" class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">El pub favorito de Ted Lasso</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Mae</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/houseplant-img.webp" alt="Unretiro al estilo Houseplant"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">Unretiro al estilo Houseplant</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Seth Rogen</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/pobre-angelito-img.jpeg" alt="De vacaciones con Mi pobre angelito"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">De vacaciones con Mi pobre angelito</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Buzz</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
-
-      <!-- Estadia -->
-      <div class="main-previousStays__element">
-        <span class="main-previousStays__element-upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
-        <img src="./images/blockbuster-img.webp" alt="La última tienda de Blockbuster"
-          class="main-previousStays__element-image">
-        <h2 class="main-previousStays__element-title">La última tienda de Blockbuster</h2>
-        <p class="main-previousStays__element-host">Anfitrión: Sandi</p>
-        <p class="main-previousStays__element-date">Agotada</p>
-      </div>
+      <h2 class="main-previousStays__title">Estadías anteriores</h2>
+      
+      <article class="main-previousStays__section">
+      
+        <!-- Estadia -->
+        <div class="main-previousStays__section-item">
+          <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+          <img src="./images/museo-orsay.webp" alt="Inaugura los Juegos Olimpicos en el Museo de Orsay"
+            class="main-previousStays__section-item__image">
+          <h2 class="main-previousStays__section-item__title">Inaugura los Juegos Olimpicos en el Museo de Orsay</h2>
+          <p class="main-previousStays__section-item__host">Anfitrión: Mathieu Lehanneur</p>
+          <p class="main-previousStays__section-item__date">Agotada</p>
+        </div>
+      
+        <!-- Estadia -->
+        <div class="main-previousStays__section-item">
+          <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+          <img src="./images/museo-orsay-2-img.webp" alt="Despierta en el Museo de Orsay"
+            class="main-previousStays__section-item__image">
+          <h2 class="main-previousStays__section-item__title">Despierta en el Museo de Orsay</h2>
+          <p class="main-previousStays__section-item__host">Anfitrión: Mathieu Lehanneur</p>
+          <p class="main-previousStays__section-item__date">Agotada
+        </div>
+      
+        <!-- Estadia -->
+        <div class="main-previousStays__section-item">
+          <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+          <img src="./images/intensamente-img.webp" alt="Crea pensamientos centrales con Intensa-Mente 2"
+            class="main-previousStays__section-item__image">
+          <h2 class="main-previousStays__section-item__title">Crea pensamientos centrales con Intensa-Mente 2</h2>
+          <p class="main-previousStays__section-item__host">Anfitrión: Joy</p>
+          <p class="main-previousStays__section-item__date">Agotada</p>
+        </div>
+      
+        <!-- Estadia -->
+        <div class="main-previousStays__section-item">
+          <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+          <img src="./images/los-increibles-img.jpeg" alt="Diseña tu supertraje de Los Increíbles"
+            class="main-previousStays__section-item__image">
+          <h2 class="main-previousStays__section-item__title">Diseña tu supertraje de Los Increíbles</h2>
+          <p class="main-previousStays__section-item__host">Anfitrión: Edna Mode</p>
+          <p class="main-previousStays__section-item__date">Agotada</p>
+        </div>
+      
+        <!-- Estadia -->
+        < class="main-previousStays__section-item">
+          <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+          <img src="./images/feid-img.webp" alt="Vete de gira sectionditem__" class="main-previousStays__element-image">
+          <h2 class="main-previousStays__element-title">Vete de gira con Feid</h2>
+          <p class="main-previousStays__section-item__host">Anfitrión: Feid</p>
+          <p class="main-previousStays_sectiontitem__-date">Agotada</p>
+          section
+          item__<!-- Estadia -->
+          < class="main-previousStays__section-item">
+            <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+            <img src="./images/khabib-img.webp" alt="Juega con Khsectioneitem__" class="main-previousStays__element-image">
+            <h2 class="main-previousStays__element-title">Juega con Khaby Lame</h2>
+            <p class="main-previousStays__section-item__host">Anfitrión: Khaby Lame</p>
+            <p class="main-previousStays_sectiontitem__-date">Agotada</p>
+            section
+            item__<!-- Estadia -->
+            < class="main-previousStays__section-item">
+              <span class="main-previousStays__section-item__upload"><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+              <img src="./images/mansion-x-2.webp" alt="Quédate en la section item__X"
+                class="main-previousStays__element-image">
+              <h2 class="main-previousStays__element-title">Quédate en la Mansión X</h2>
+              <p class="main-previousStays__section-item__host">Anfitrión: Jubilee</p>
+              <p class="main-previousStays_sectiontitem__-date">Agotada</p>
+              section
+              item__<!-- Estadia -->
+              <div class="main-previousStays__section-item">
+                <span class="main-previousStays__section-item__upload"><i
+                    class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                <img src="./images/ferrari-img.jfif" alt="Pasa la noche en el Museo Ferrari"
+                  class="main-previousStays__section-item__image">
+                <h2 class="main-previousStays__section-item__title">Pasa la noche en el Museo Ferrari</h2>
+                <p class="main-previousStays__section-item__host">Anfitrión: Marc Gené</p>
+                <p class="main-previousStays__section-item__date">Agotada</p>
+              </div>
+      
+              <!-- Estadia -->
+              <div class="main-previousStays__section-item">
+                <span class="main-previousStays__section-item__upload"><i
+                    class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                <img src="./images/up-img.webp" alt="Aventura de altura en la casa de Up"
+                  class="main-previousStays__section-item__image">
+                <h2 class="main-previousStays__section-item__title">Aventura de altura en la casa de Up</h2>
+                <p class="main-previousStays__section-item__host">Anfitrión: Carl Fredricksen</p>
+                <p class="main-previousStays__section-item__date">Agotada</p>
+              </div>
+      
+              <!-- Estadia -->
+              < class="main-previousStays__section-item">
+                <span class="main-previousStays__section-item__upload"><i
+                    class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                <img src="./images/shrek-img.webp" alt="El pantano desection item__class=" main-previousStays__element-image">
+                <h2 class="main-previousStays__element-title">El pantano de Shrek</h2>
+                <p class="main-previousStays__section-item__host">Anfitrión: Donkey</p>
+                <p class="main-previousStays_sectiontitem__-date">Agotada</p>
+                section
+                item__<!-- Estadia -->
+                <div class="main-previousStays__section-item">
+                  <span class="main-previousStays__section-item__upload"><i
+                      class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                  <img src="./images/barbie-img.webp" alt="Casa de los Sueños en Barbie Malibú, al estilo Ken"
+                    class="main-previousStays__section-item__image">
+                  <h2 class="main-previousStays__section-item__title">Casa de los Sueños en Barbie Malibú, al estilo Ken</h2>
+                  <p class="main-previousStays__section-item__host">Anfitrión: Ken</p>
+                  <p class="main-previousStays__section-item__date">Agotada</p>
+                </div>
+      
+                <!-- Estadia -->
+                < class="main-previousStays__section-item">
+                  <span class="main-previousStays__section-item__upload"><i
+                      class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                  <img src="./images/lasso-img.webp" alt="El pub favoritosection item__Lasso"
+                    class="main-previousStays__element-image">
+                  <h2 class="main-previousStays__element-title">El pub favorito de Ted Lasso</h2>
+                  <p class="main-previousStays__section-item__host">Anfitrión: Mae</p>
+                  <p class="main-previousStays_sectiontitem__-date">Agotada</p>
+                  section
+                  item__<!-- Estadia -->
+                  <div class="main-previousStays__section-item">
+                    <span class="main-previousStays__section-item__upload"><i
+                        class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    <img src="./images/houseplant-img.webp" alt="Unretiro al estilo Houseplant"
+                      class="main-previousStays__section-item__image">
+                    <h2 class="main-previousStays__section-item__title">Unretiro al estilo Houseplant</h2>
+                    <p class="main-previousStays__section-item__host">Anfitrión: Seth Rogen</p>
+                    <p class="main-previousStays__section-item__date">Agotada</p>
+                  </div>
+      
+                  <!-- Estadia -->
+                  <div class="main-previousStays__section-item">
+                    <span class="main-previousStays__section-item__upload"><i
+                        class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    <img src="./images/pobre-angelito-img.jpeg" alt="De vacaciones con Mi pobre angelito"
+                      class="main-previousStays__section-item__image">
+                    <h2 class="main-previousStays__section-item__title">De vacaciones con Mi pobre angelito</h2>
+                    <p class="main-previousStays__section-item__host">Anfitrión: Buzz</p>
+                    <p class="main-previousStays__section-item__date">Agotada</p>
+                  </div>
+      
+                  <!-- Estadia -->
+                  <div class="main-previousStays__section-item">
+                    <span class="main-previousStays__section-item__upload"><i
+                        class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                    <img src="./images/blockbuster-img.webp" alt="La última tienda de Blockbuster"
+                      class="main-previousStays__section-item__image">
+                    <h2 class="main-previousStays__section-item__title">La última tienda de Blockbuster</h2>
+                    <p class="main-previousStays__section-item__host">Anfitrión: Sandi</p>
+                    <p class="main-previousStays__section-item__date">Agotada</p>
+                  </div>
+      
+      </article>
 
     </section>
     <!-- Fin de sección de las estadias anteriores -->
